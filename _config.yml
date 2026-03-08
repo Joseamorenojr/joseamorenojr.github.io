@@ -1,7 +1,7 @@
 title: "Jose Moreno Portfolio"
 description: "Computer Science ePortfolio"
 
-remote_theme: mmistakes/minimal-mistakes
+theme: jekyll-theme-cayman
 minimal_mistakes_skin: "dark"
 
 plugins:
