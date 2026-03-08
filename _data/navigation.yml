@@ -3,8 +3,6 @@ main:
     url: /
   - title: "Projects"
     url: /projects/
-  - title: "Artifacts"
-    url: /artifacts/
   - title: "Code Review"
     url: /code-review/
   - title: "Self Assessment"
