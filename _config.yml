@@ -1,15 +1,9 @@
 title: "Jose Moreno Portfolio"
 description: "Computer Science ePortfolio"
 
-theme: jekyll-theme-cayman
-minimal_mistakes_skin: "dark"
+theme: jekyll-theme-cayman   # switched from Minimal Mistakes
 
-plugins:
-  - jekyll-include-cache
-
-sass:
-  style: compressed
-
+# Include your pages
 include:
   - _pages
 
@@ -23,7 +17,6 @@ author:
   avatar: "/assets/images/profile.jpg"
   bio: "Computer Science student focused on software engineering, career development, and system design."
   location: "Fort Worth, Texas, USA"
-
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
