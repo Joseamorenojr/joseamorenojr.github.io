@@ -1,25 +1,12 @@
-title: Home
-description: Computer Science ePortfolio
+title: "Jose Moreno Portfolio"
+description: "Computer Science ePortfolio"
+
 remote_theme: mmistakes/minimal-mistakes
 
 plugins:
   - jekyll-include-cache
-  
-minimal_mistakes_skin: "dark"
 
 collections:
   pages:
     output: true
     permalink: /:path/
-
-nav:
-  - title: "Home"
-    url: /
-  - title: "About"
-    url: /about/
-  - title: "Artifacts"
-    url: /artifacts/
-  - title: "Code Review"
-    url: /code-review/
-  - title: "Self Assessment"
-    url: /professional-self-assessment/
