@@ -1,9 +1,15 @@
 ---
-layout: single
-title: "About Me"
+title: "About"
+layout: default
 permalink: /about/
 ---
 
-My name is Jose Moreno and I am a Computer Science student with experience in software development, artificial intelligence, and embedded systems.
+<div class="page-content-wrapper">
+  {% include sidebar.html %}
 
-My academic projects include reinforcement learning systems, Raspberry Pi hardware integrations, and algorithmic problem solving.
+  <div class="main-content">
+  # About Me
+
+  I am a Computer Science student focused on software engineering, system design, and career development. My portfolio showcases projects and assignments completed during my studies.
+  </div>
+</div>
