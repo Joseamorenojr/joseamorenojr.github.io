@@ -1,3 +1,6 @@
-theme: minimal-mistakes-jekyll
-title: Jose's homepage
-description: Bookmark this to keep an eye on my project updates!
+title: Jose Moreno Portfolio
+description: Computer Science ePortfolio
+remote_theme: mmistakes/minimal-mistakes
+
+plugins:
+  - jekyll-include-cache
