@@ -1,25 +1,21 @@
 ---
-# Only the main Sass file needs front matter
+# Only main Sass file needs front matter
 ---
 
-/* -------------------------
-   Background Image & Body
----------------------------- */
+/* Body & Background */
 body {
   background-image: url("/assets/images/background.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  color: #ffffff; /* white page text */
+  color: #ffffff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.6;
 }
 
-/* -------------------------
-   Header / Navigation
----------------------------- */
+/* Header / Navigation */
 header.site-header {
-  background-color: rgba(0,0,0,0.4); /* semi-transparent */
+  background-color: rgba(0,0,0,0.4);
   box-shadow: none;
   padding: 1rem;
 }
@@ -27,40 +23,36 @@ header.site-header {
 header.site-header a {
   color: #ffffff;
   text-decoration: none;
-  transition: color 0.2s ease-in-out;
 }
 
 header.site-header a:hover {
-  color: #ffd700; /* highlight on hover */
+  color: #ffd700;
 }
 
-/* -------------------------
-   Page Titles / Headings
----------------------------- */
+/* Headings */
 h1, h2, h3, h4, h5, h6 {
   color: #ffffff;
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
 }
 
-/* -------------------------
-   Links in content
----------------------------- */
+/* Links */
 a {
   color: #ffffff;
   text-decoration: underline;
-  transition: color 0.2s ease-in-out;
 }
 
 a:hover {
   color: #ffd700;
 }
 
-/* -------------------------
-   Sidebar / Widgets (if any)
----------------------------- */
+/* Sidebar */
 .sidebar {
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0,0,0,0.5);
+  padding: 1rem;
+  border-radius: 10px;
+  max-width: 250px;
   color: #ffffff;
+  margin-bottom: 2rem;
 }
 
 .sidebar a {
@@ -69,4 +61,19 @@ a:hover {
 
 .sidebar a:hover {
   color: #ffd700;
+}
+
+/* Two-column layout */
+.page-content-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.page-content-wrapper .sidebar {
+  flex: 0 0 250px;
+}
+
+.page-content-wrapper .main-content {
+  flex: 1;
 }
