@@ -1,6 +1,7 @@
 ---
 # Only the main Sass file needs front matter
 ---
+
 @import "minimal-mistakes";
 
 /* Transparent navigation bar */
@@ -18,25 +19,41 @@
   color: white !important;
 }
 
-body {
-  color: #ffffff;
+/* Page text */
+
+.page__content,
+.page__content p,
+.page__content li,
+.page__content strong {
+  color: #ffffff !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: #ffffff;
-}
+/* Sidebar text */
 
 .author__content,
+.author__name,
 .author__bio,
-.page__meta {
-  color: #ffffff;
+.author__urls {
+  color: #ffffff !important;
 }
+
+/* Navigation links */
+
+.greedy-nav a {
+  color: #ffffff !important;
+}
+
+/* Background image */
 
 body,
 .layout--home,
 .layout--single,
 .page {
   background-image: url("/assets/images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
