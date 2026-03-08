@@ -1,116 +1,20 @@
----
-# Only the main Sass file needs front matter
----
-
-@import "minimal-mistakes";
-
-/* ----------------------------------
-   Top Navigation / Masthead
-------------------------------------- */
-.site-header,
-.site-header__inner {
-  background-color: rgba(0, 0, 0, 0.0) !important; /* fully transparent */
-  border-bottom: none !important;
-  box-shadow: none !important;
-}
-
-.site-header::before,
-.site-header__inner::before {
-  display: none !important; /* remove pseudo-element overlay */
-}
-
-/* Navigation links */
-.site-header a,
-.site-header__inner a,
-.greedy-nav a {
-  color: #ffffff !important;
-  transition: color 0.2s ease-in-out;
-}
-
-.site-header a:hover,
-.site-header__inner a:hover,
-.greedy-nav a:hover {
-  color: #ffd700 !important;
-}
-
-/* Masthead text */
-.masthead .site-title,
-.masthead .site-description {
-  color: #ffffff !important;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
-}
-
-/* ----------------------------------
-   Page / Collection Headers
-------------------------------------- */
-.page__header,
-.collection__header {
-  background-color: rgba(0,0,0,0.0) !important; /* transparent */
-  border-bottom: none !important;
-  box-shadow: none !important;
-  padding: 0 !important; /* remove extra spacing */
-}
-
-/* Headings in page/collection headers */
-.page__header h1, .page__header h2, .page__header h3, .page__header h4,
-.collection__header h1, .collection__header h2, .collection__header h3, .collection__header h4 {
-  color: #ffffff !important;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
-}
-
-/* ----------------------------------
-   Page Content
-------------------------------------- */
-.page__content,
-.page__content * {
-  color: #ffffff !important;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
-}
-
-/* Links in content */
-.page__content a {
-  color: #ffffff !important;
-  text-decoration: underline;
-  transition: color 0.2s ease-in-out;
-}
-
-.page__content a:hover {
-  color: #ffd700 !important;
-}
-
-/* ----------------------------------
-   Sidebar / Author Info
-------------------------------------- */
-.sidebar,
-.author__content,
-.author__name,
-.author__bio,
-.author__urls {
-  background-color: rgba(0,0,0,0.3) !important; /* semi-transparent dark */
-  color: #ffffff !important;
-}
-
-/* Links in sidebar / author */
-.sidebar a,
-.author__urls a {
-  color: #ffffff !important;
-  transition: color 0.2s ease-in-out;
-}
-
-.sidebar a:hover,
-.author__urls a:hover {
-  color: #ffd700 !important;
-}
-
-/* ----------------------------------
-   Background Image
-------------------------------------- */
-body,
-.layout--home,
-.layout--single,
-.page {
+/* main.scss */
+body {
   background-image: url("/assets/images/background.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  color: #ffffff; /* page text color */
+}
+
+header.site-header {
+  background-color: rgba(0,0,0,0.4); /* semi-transparent header */
+}
+
+header.site-header a {
+  color: #ffffff;
+}
+
+header.site-header a:hover {
+  color: #ffd700;
 }
