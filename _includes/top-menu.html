@@ -2,7 +2,9 @@
   {% assign pages_list = site.pages | sort: 'nav_order' %}
   {% for my_page in pages_list %}
     {% if my_page.nav_order %}
-      <a href="{{ my_page.url }}" class="{% if page.url == my_page.url %}current-page{% endif %}">{{ my_page.title }}</a>
+      <a href="{{ my_page.url }}" class="{% if page.url == my_page.url %}current-page{% endif %}">
+        {{ my_page.title }}
+      </a>
     {% endif %}
   {% endfor %}
 </nav>
