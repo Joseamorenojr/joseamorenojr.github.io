@@ -3,6 +3,21 @@
 ---
 @import "minimal-mistakes";
 
+/* Transparent navigation bar */
+
+.masthead {
+  background: transparent !important;
+  border-bottom: none !important;
+}
+
+.masthead__inner-wrap {
+  background: transparent !important;
+}
+
+.masthead a {
+  color: white !important;
+}
+
 body {
   color: #ffffff;
 }
