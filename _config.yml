@@ -15,11 +15,11 @@ author:
   name: "Jose Moreno"
   avatar: "/assets/images/profile.jpg"
   bio: "Computer Science student focused on software engineering, artificial intelligence, and system design."
-  location: "Texas, USA"
+  location: "Fort Worth, Texas, USA"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/Joseamorenojr"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com"
+      url: "https://www.linkedin.com/in/jose-moreno-95b827185/"
