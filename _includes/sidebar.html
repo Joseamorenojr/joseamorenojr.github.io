@@ -1,0 +1,13 @@
+<div class="sidebar">
+  <div class="author-profile">
+    <img src="/assets/images/profile.jpg" alt="Jose Moreno" class="author-avatar" style="width:100%; border-radius:50%; margin-bottom:1rem;">
+    <h3>{{ site.author.name }}</h3>
+    <p>{{ site.author.bio }}</p>
+    <p>{{ site.author.location }}</p>
+    <div class="author-links">
+      {% for link in site.author.links %}
+        <a href="{{ link.url }}" target="_blank">{{ link.label }}</a>{% unless forloop.last %} | {% endunless %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
