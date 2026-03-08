@@ -1,12 +1,16 @@
 ---
 layout: home
 author_profile: true
-title: "Jose Moreno Portfolio"
+title: "Jose Moreno Computer Science ePortfolio"
 ---
 
 Welcome to my Computer Science ePortfolio.
 
-This site showcases my projects and work completed throughout my Computer Science program.
+This site contains artifacts and enhancements completed during my Computer Science program. The portfolio demonstrates skills in:
+
+- Software Design and Engineering
+- Algorithms and Data Structures
+- Database Systems
 
 ## Featured Projects
 
