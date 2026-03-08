@@ -2,6 +2,10 @@ title: "Jose Moreno Portfolio"
 description: "Computer Science ePortfolio"
 
 remote_theme: mmistakes/minimal-mistakes
+minimal_mistakes_skin: "dark"
+
+sass:
+  style: compressed
 
 plugins:
   - jekyll-include-cache
