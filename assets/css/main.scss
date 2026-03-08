@@ -1,5 +1,5 @@
 ---
-# Only main Sass file needs front matter
+# main Sass file
 ---
 
 /* Body & Background */
@@ -30,7 +30,7 @@ header.site-header a:hover {
 }
 
 /* Headings */
-h1, h2, h3, h4, h5, h6 {
+h1,h2,h3,h4,h5,h6 {
   color: #ffffff;
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
 }
@@ -50,7 +50,7 @@ a:hover {
   background-color: rgba(0,0,0,0.5);
   padding: 1rem;
   border-radius: 10px;
-  max-width: 250px;
+  flex: 0 0 250px;
   color: #ffffff;
   margin-bottom: 2rem;
 }
@@ -64,16 +64,12 @@ a:hover {
 }
 
 /* Two-column layout */
-
 .page-content-wrapper {
   display: flex;
+  flex-direction: row;
   gap: 2rem;
 }
 
-.page-content-wrapper .sidebar {
-  flex: 0 0 250px; /* sidebar fixed width */
-}
-
 .page-content-wrapper .main-content {
-  flex: 1; /* main content takes remaining space */
+  flex: 1;
 }
