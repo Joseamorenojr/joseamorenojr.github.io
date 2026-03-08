@@ -3,6 +3,20 @@
 ---
 @import "minimal-mistakes";
 
+body {
+  color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff;
+}
+
+.author__content,
+.author__bio,
+.page__meta {
+  color: #ffffff;
+}
+
 body,
 .layout--home,
 .layout--single,
