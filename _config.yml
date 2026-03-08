@@ -10,6 +10,11 @@ collections:
   pages:
     output: true
     permalink: /:path/
+    
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
 
 author:
   name: "Jose Moreno"
