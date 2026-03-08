@@ -1,0 +1,29 @@
+<section class="hero">
+
+<div class="left">
+
+<h1>Pirate Intelligent Agent</h1>
+<p>Algorithms Artifact</p>
+
+</div>
+
+<div class="center"></div>
+
+<div class="right">
+
+<p>
+
+A reinforcement learning system using Q-learning to train an
+intelligent agent.
+
+Enhancements include:
+
+• epsilon-greedy decay  
+• matrix-based Q-table operations  
+• training visualization  
+
+</p>
+
+</div>
+
+</section>
