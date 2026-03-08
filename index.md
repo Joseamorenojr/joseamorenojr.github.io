@@ -2,6 +2,11 @@
 layout: home
 author_profile: true
 title: "Jose Moreno Computer Science ePortfolio"
+
+header:
+  overlay_image: /assets/images/banner.jpg
+  overlay_filter: 0.4
+  caption: "Computer Science Portfolio"
 ---
 
 Welcome to my Computer Science ePortfolio.
