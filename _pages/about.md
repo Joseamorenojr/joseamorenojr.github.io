@@ -2,6 +2,7 @@
 title: "About"
 layout: default
 permalink: /about/
+nav_order: 2
 ---
 
 <div class="page-content-wrapper">
