@@ -4,11 +4,11 @@ description: "Computer Science ePortfolio"
 remote_theme: mmistakes/minimal-mistakes
 minimal_mistakes_skin: "dark"
 
-sass:
-  style: compressed
-
 plugins:
   - jekyll-include-cache
+
+sass:
+  style: compressed
 
 include:
   - _pages
@@ -17,17 +17,20 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
-    
 
 author:
   name: "Jose Moreno"
   avatar: "/assets/images/profile.jpg"
   bio: "Computer Science student focused on software engineering, career development, and system design."
-  skills: "Experienced in Python, Machine Learning, Raspberry Pi systems, and algorithm design."
   location: "Fort Worth, Texas, USA"
+
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
+      url: "https://github.com/Joseamorenojr"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/jose-moreno-95b827185/"
       url: "https://github.com/Joseamorenojr"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
