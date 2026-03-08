@@ -17,5 +17,9 @@ nav:
     url: /
   - title: "About"
     url: /about/
-  - title: "GitHub"
-    url: https://github.com/Joseamorenojr
+  - title: "Artifacts"
+    url: /artifacts/
+  - title: "Code Review"
+    url: /code-review/
+  - title: "Self Assessment"
+    url: /professional-self-assessment/
