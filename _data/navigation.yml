@@ -1,0 +1,11 @@
+main:
+  - title: "Home"
+    url: /
+  - title: "About"
+    url: /about/
+  - title: "Artifacts"
+    url: /artifacts/
+  - title: "Code Review"
+    url: /code-review/
+  - title: "Self Assessment"
+    url: /professional-self-assessment/
