@@ -3,7 +3,10 @@
 ---
 @import "minimal-mistakes";
 
-body {
+body,
+.layout--home,
+.layout--single,
+.page {
   background-image: url("/assets/images/background.jpg");
   background-size: cover;
   background-position: center;
