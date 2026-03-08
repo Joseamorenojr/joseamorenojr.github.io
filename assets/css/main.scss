@@ -5,35 +5,38 @@
 @import "minimal-mistakes";
 
 /* ----------------------------------
-   Masthead / Site Navigation
+   Top Navigation / Masthead
 ------------------------------------- */
-.masthead,
-.masthead__inner-wrap,
-.site-header {
-  background-color: rgba(0, 0, 0, 0.4); /* semi-transparent black */
-  border-bottom: none;
-  transition: background-color 0.3s ease;
+.site-header,
+.site-header__inner {
+  background-color: rgba(0, 0, 0, 0.0) !important; /* fully transparent */
+  border-bottom: none !important;
+  box-shadow: none !important;
 }
 
-.masthead::before,
-.masthead__inner-wrap::before {
-  display: none; /* remove pseudo-element overlay */
+.site-header::before,
+.site-header__inner::before {
+  display: none !important; /* remove pseudo-element overlay */
 }
 
-/* Masthead navigation links */
+/* Navigation links */
+.site-header a,
+.site-header__inner a,
 .greedy-nav a {
-  color: #ffffff;
+  color: #ffffff !important;
   transition: color 0.2s ease-in-out;
 }
 
+.site-header a:hover,
+.site-header__inner a:hover,
 .greedy-nav a:hover {
-  color: #ffd700; /* highlight on hover */
+  color: #ffd700 !important;
 }
 
 /* Masthead text */
 .masthead .site-title,
 .masthead .site-description {
-  color: #ffffff;
+  color: #ffffff !important;
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
 }
 
@@ -42,22 +45,16 @@
 ------------------------------------- */
 .page__header,
 .collection__header {
-  background-color: rgba(0,0,0,0.0); /* fully transparent */
-  border-bottom: none;
-  box-shadow: none;
-  padding: 0; /* optional: remove extra spacing */
+  background-color: rgba(0,0,0,0.0) !important; /* transparent */
+  border-bottom: none !important;
+  box-shadow: none !important;
+  padding: 0 !important; /* remove extra spacing */
 }
 
-/* Page and collection headings */
-.page__header h1,
-.page__header h2,
-.page__header h3,
-.page__header h4,
-.collection__header h1,
-.collection__header h2,
-.collection__header h3,
-.collection__header h4 {
-  color: #ffffff;
+/* Headings in page/collection headers */
+.page__header h1, .page__header h2, .page__header h3, .page__header h4,
+.collection__header h1, .collection__header h2, .collection__header h3, .collection__header h4 {
+  color: #ffffff !important;
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
 }
 
@@ -66,19 +63,19 @@
 ------------------------------------- */
 .page__content,
 .page__content * {
-  color: #ffffff;
+  color: #ffffff !important;
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
 }
 
-/* Links inside page content */
+/* Links in content */
 .page__content a {
-  color: #ffffff;
+  color: #ffffff !important;
   text-decoration: underline;
   transition: color 0.2s ease-in-out;
 }
 
 .page__content a:hover {
-  color: #ffd700;
+  color: #ffd700 !important;
 }
 
 /* ----------------------------------
@@ -89,19 +86,20 @@
 .author__name,
 .author__bio,
 .author__urls {
-  background-color: rgba(0,0,0,0.3); /* semi-transparent dark */
-  color: #ffffff;
+  background-color: rgba(0,0,0,0.3) !important; /* semi-transparent dark */
+  color: #ffffff !important;
 }
 
+/* Links in sidebar / author */
 .sidebar a,
 .author__urls a {
-  color: #ffffff;
+  color: #ffffff !important;
   transition: color 0.2s ease-in-out;
 }
 
 .sidebar a:hover,
 .author__urls a:hover {
-  color: #ffd700;
+  color: #ffd700 !important;
 }
 
 /* ----------------------------------
