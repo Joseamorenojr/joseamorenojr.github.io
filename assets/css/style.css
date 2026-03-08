@@ -30,21 +30,36 @@ margin: 0;
 padding: 0;
 }
 
-body{
+body {
 font-family: Helvetica, Arial, sans-serif;
-background:var(--bg-color);
-color:var(--text-color);
-line-height:1.6;
-padding:40px;
+background: #f5f5f5;
+color: #111;
+line-height: 1.6;
+
+margin: 0;
+padding: 40px;
+
+display: flex;
+justify-content: center;
 }
 
 /* ----------------------------- */
 /* Page Frame (Border Layout) */
 /* ----------------------------- */
 
-.page-frame{
-background:var(--frame-bg);
-border:1px solid var(--border-color);
+.page-frame {
+
+width: 100%;
+max-width: 1400px;
+
+border: 1px solid #ccc;
+
+padding: 60px;
+
+background: white;
+
+min-height: calc(100vh - 80px);
+
 }
 
 /* ----------------------------- */
