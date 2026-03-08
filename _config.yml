@@ -4,3 +4,18 @@ remote_theme: mmistakes/minimal-mistakes
 
 plugins:
   - jekyll-include-cache
+  
+minimal_mistakes_skin: "dark"
+
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+nav:
+  - title: "Home"
+    url: /
+  - title: "About"
+    url: /about/
+  - title: "GitHub"
+    url: https://github.com/Joseamorenojr
