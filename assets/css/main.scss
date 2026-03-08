@@ -15,7 +15,7 @@
   background: transparent !important;
 }
 
-.masthead a {
+.greedy-nav a {
   color: white !important;
 }
 
@@ -23,8 +23,7 @@
 
 .page__content,
 .page__content p,
-.page__content li,
-.page__content strong {
+.page__content li {
   color: #ffffff !important;
 }
 
@@ -37,23 +36,13 @@
   color: #ffffff !important;
 }
 
-/* Navigation links */
-
-.greedy-nav a {
-  color: #ffffff !important;
-}
-
-/* Background image */
+/* Background */
 
 body,
 .layout--home,
 .layout--single,
 .page {
   background-image: url("/assets/images/background.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
