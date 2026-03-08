@@ -130,6 +130,16 @@ color: #333;
 gap: 18px;
 }
 
+.right ul {
+margin-top: 10px;
+padding-left: 20px;
+text-align: left;
+}
+
+.right li {
+margin-bottom: 8px;
+}
+
 /* ----------------------------- */
 /* About Page */
 /* ----------------------------- */
@@ -146,6 +156,8 @@ width: 200px;
 height: 200px;
 border-radius: 50%;
 object-fit: cover;
+
+margin-bottom: 10px;
 }
 
 .bio {
