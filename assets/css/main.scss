@@ -64,16 +64,16 @@ a:hover {
 }
 
 /* Two-column layout */
+
 .page-content-wrapper {
   display: flex;
-  flex-direction: row;
   gap: 2rem;
 }
 
 .page-content-wrapper .sidebar {
-  flex: 0 0 250px;
+  flex: 0 0 250px; /* sidebar fixed width */
 }
 
 .page-content-wrapper .main-content {
-  flex: 1;
+  flex: 1; /* main content takes remaining space */
 }
