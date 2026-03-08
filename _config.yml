@@ -15,6 +15,7 @@ author:
   name: "Jose Moreno"
   avatar: "/assets/images/profile.jpg"
   bio: "Computer Science student focused on software engineering, career development, and system design."
+  skills: "Experienced in Python, Machine Learning, Raspberry Pi systems, and algorithm design."
   location: "Fort Worth, Texas, USA"
   links:
     - label: "GitHub"
