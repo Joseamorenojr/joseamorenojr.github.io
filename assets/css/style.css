@@ -17,6 +17,23 @@ padding: 40px;
 }
 
 /* ----------------------------- */
+/* Page Frame (Border Layout) */
+/* ----------------------------- */
+
+.page-frame{
+max-width:1400px;
+margin:auto;
+
+border:1px solid #ccc;
+
+padding:60px;
+
+min-height:90vh;
+
+background:white;
+}
+
+/* ----------------------------- */
 /* Navigation */
 /* ----------------------------- */
 
