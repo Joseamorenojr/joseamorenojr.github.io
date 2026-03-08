@@ -1,7 +1,7 @@
 ---
 layout: home
 author_profile: true
-title: "Get to know the man behind the work, and how it was created."
+title: "Get to know the man behind the work, and how it was created"
 
 header:
   overlay_image: /assets/images/banner.jpg
