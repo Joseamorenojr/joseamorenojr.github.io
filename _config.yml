@@ -6,10 +6,13 @@ remote_theme: mmistakes/minimal-mistakes
 plugins:
   - jekyll-include-cache
 
+include:
+  - _pages
+
 collections:
-  pages:
+  projects:
     output: true
-    permalink: /:path/
+    permalink: /projects/:path/
     
 
 author:
