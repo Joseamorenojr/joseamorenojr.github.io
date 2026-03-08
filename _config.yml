@@ -1,6 +1,5 @@
 title: "Jose Moreno Portfolio"
 description: "Computer Science ePortfolio"
-
 theme: jekyll-theme-cayman
 
 include:
@@ -14,14 +13,13 @@ collections:
 author:
   name: "Jose Moreno"
   avatar: "/assets/images/profile.jpg"
-  bio: "Computer Science student focused on software engineering, career development, and system design."
+  bio: "Computer Science student focused on software engineering, system design, and career development."
   location: "Fort Worth, Texas, USA"
   links:
     - label: "GitHub"
-      icon: "fab fa-fw fa-github"
       url: "https://github.com/Joseamorenojr"
     - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/jose-moreno-95b827185/"
+
 sass:
   style: compressed
