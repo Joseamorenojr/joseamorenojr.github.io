@@ -4,40 +4,73 @@
 
 @import "minimal-mistakes";
 
-/* Transparent navigation bar */
-
-.masthead {
-  background: transparent !important;
-  border-bottom: none !important;
+/* ----------------------------------
+   Masthead: Semi-Transparent & Clean
+------------------------------------- */
+.masthead,
+.masthead__inner-wrap,
+.site-header {
+  background-color: rgba(0, 0, 0, 0.4); /* 40% opaque black */
+  border-bottom: none;
+  transition: background-color 0.3s ease;
 }
 
-.masthead__inner-wrap {
-  background: transparent !important;
+/* Remove any pseudo-element interference */
+.masthead::before,
+.masthead__inner-wrap::before {
+  display: none;
 }
 
+/* Navigation links in masthead */
 .greedy-nav a {
-  color: white !important;
+  color: #ffffff;
+  transition: color 0.2s ease-in-out;
 }
 
-/* Page text */
+.greedy-nav a:hover {
+  color: #ffd700; /* highlight color on hover */
+}
 
+/* Masthead text */
+.masthead .site-title,
+.masthead .site-description {
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+/* ----------------------------------
+   Page Content: White text readable
+------------------------------------- */
 .page__content,
-.page__content p,
-.page__content li {
-  color: #ffffff !important;
+.page__content * {
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
 }
 
-/* Sidebar text */
+/* Links inside content */
+.page__content a {
+  color: #ffffff;
+  text-decoration: underline;
+  transition: color 0.2s ease-in-out;
+}
 
+.page__content a:hover {
+  color: #ffd700;
+}
+
+/* ----------------------------------
+   Sidebar / Author Info
+------------------------------------- */
 .author__content,
 .author__name,
 .author__bio,
 .author__urls {
-  color: #ffffff !important;
+  color: #ffffff;
 }
 
-/* Background */
-
+/* ----------------------------------
+   Background Image
+------------------------------------- */
 body,
 .layout--home,
 .layout--single,
