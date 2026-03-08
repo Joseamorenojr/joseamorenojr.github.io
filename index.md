@@ -6,7 +6,6 @@ nav_order: 1
 ---
 
 <div class="page-content-wrapper">
-
   {% include sidebar.html %}
 
   <div class="main-content">
@@ -20,5 +19,4 @@ nav_order: 1
   - [Raspberry Pi Thermostat System](/projects/thermostat_system)
   - [AI Cartpole Model](/projects/cartpole_model)
   </div>
-
 </div>
