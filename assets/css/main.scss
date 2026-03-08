@@ -2,7 +2,7 @@
 # main Sass file
 ---
 
-/* Body & Background */
+/* ---------------- Body & Background ---------------- */
 body {
   background-image: url("/assets/images/background.jpg");
   background-size: cover;
@@ -11,31 +11,43 @@ body {
   color: #ffffff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.6;
+  margin: 0;
 }
 
-/* Header */
-header.site-header {
-  background-color: rgba(0,0,0,0.4);
-  box-shadow: none;
-  padding: 1rem;
+/* ---------------- Custom Header ---------------- */
+.custom-header {
+  display: flex;
+  justify-content: space-between; /* title left, links right */
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
-header.site-header a {
+.custom-header h1 a {
   color: #ffffff;
   text-decoration: none;
 }
 
-header.site-header a:hover {
+.custom-header .header-right a {
+  margin-left: 1rem;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.custom-header .header-right a:hover {
   color: #ffd700;
 }
 
-/* Headings */
-h1,h2,h3,h4,h5,h6 {
+/* ---------------- Headings ---------------- */
+h1, h2, h3, h4, h5, h6 {
   color: #ffffff;
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
 }
 
-/* Links */
+/* ---------------- Links ---------------- */
 a {
   color: #ffffff;
   text-decoration: underline;
@@ -45,13 +57,13 @@ a:hover {
   color: #ffd700;
 }
 
-/* Sidebar */
+/* ---------------- Sidebar ---------------- */
 .sidebar {
-  background-color: rgba(0,0,0,0.5);
+  flex: 0 0 250px; /* fixed width */
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 1rem;
   border-radius: 10px;
-  flex: 0 0 250px;
-  color: #ffffff;
+  height: fit-content; /* prevents full page stretch */
   margin-bottom: 2rem;
 }
 
@@ -63,18 +75,23 @@ a:hover {
   color: #ffd700;
 }
 
-/* Two-column layout */
+/* ---------------- Page Content Layout ---------------- */
 .page-content-wrapper {
   display: flex;
   flex-direction: row;
   gap: 2rem;
+  max-width: 1200px;
+  margin: 2rem auto; /* centers content */
 }
 
-.page-content-wrapper .main-content {
-  flex: 1;
+.main-content {
+  flex: 1; /* remaining width (~75%) */
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+  border-radius: 10px;
 }
 
-/* Top menu */
+/* ---------------- Top Menu ---------------- */
 .top-menu {
   display: flex;
   gap: 1rem;
