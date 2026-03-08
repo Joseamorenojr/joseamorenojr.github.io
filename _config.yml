@@ -1,9 +1,8 @@
 title: "Jose Moreno Portfolio"
 description: "Computer Science ePortfolio"
 
-theme: jekyll-theme-cayman   # switched from Minimal Mistakes
+theme: jekyll-theme-cayman
 
-# Include your pages
 include:
   - _pages
 
