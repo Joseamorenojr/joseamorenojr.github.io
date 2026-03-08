@@ -1,9 +1,0 @@
-main:
-  - title: "Home"
-    url: /
-  - title: "Projects"
-    url: /projects/
-  - title: "Code Review"
-    url: /code-review/
-  - title: "Self Assessment"
-    url: /professional-self-assessment/
