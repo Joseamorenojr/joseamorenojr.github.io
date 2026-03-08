@@ -1,20 +1,72 @@
-/* main.scss */
+---
+# Only the main Sass file needs front matter
+---
+
+/* -------------------------
+   Background Image & Body
+---------------------------- */
 body {
   background-image: url("/assets/images/background.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  color: #ffffff; /* page text color */
+  color: #ffffff; /* white page text */
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.6;
 }
 
+/* -------------------------
+   Header / Navigation
+---------------------------- */
 header.site-header {
-  background-color: rgba(0,0,0,0.4); /* semi-transparent header */
+  background-color: rgba(0,0,0,0.4); /* semi-transparent */
+  box-shadow: none;
+  padding: 1rem;
 }
 
 header.site-header a {
   color: #ffffff;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
 }
 
 header.site-header a:hover {
+  color: #ffd700; /* highlight on hover */
+}
+
+/* -------------------------
+   Page Titles / Headings
+---------------------------- */
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+}
+
+/* -------------------------
+   Links in content
+---------------------------- */
+a {
+  color: #ffffff;
+  text-decoration: underline;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: #ffd700;
+}
+
+/* -------------------------
+   Sidebar / Widgets (if any)
+---------------------------- */
+.sidebar {
+  background-color: rgba(0,0,0,0.3);
+  color: #ffffff;
+}
+
+.sidebar a {
+  color: #ffffff;
+}
+
+.sidebar a:hover {
   color: #ffd700;
 }
