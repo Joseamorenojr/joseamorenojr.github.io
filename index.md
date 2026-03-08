@@ -1,7 +1,7 @@
 ---
 layout: home
 author_profile: true
-title: "Jose Moreno Computer Science ePortfolio"
+title: "Get to know the man behind the work, and how it was created."
 
 header:
   overlay_image: /assets/images/banner.jpg
