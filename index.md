@@ -1,6 +1,8 @@
 ---
 title: "Home"
 layout: default
+permalink: /
+nav_order: 1
 ---
 
 <div class="page-content-wrapper">
