@@ -1,18 +1,10 @@
 ---
-layout: single
-title: "Thermostat System Enhancement"
+title: "Raspberry Pi Thermostat System"
+excerpt: "Embedded thermostat system using Python and Raspberry Pi sensors."
+header:
+  teaser: /assets/images/thermostat.png
 ---
 
-### Original Artifact
+This project demonstrates a temperature control system developed using Python and Raspberry Pi hardware components.
 
-This project was developed using Python on a Raspberry Pi and controls temperature using a sensor and LED indicators.
-
-### Enhancement
-
-The enhancement improves modularity and implements a state machine architecture.
-
-### Skills Demonstrated
-
-- Software architecture design
-- Embedded systems integration
-- Error handling and logging
+Enhancements include improved modular architecture and database logging for temperature data.
