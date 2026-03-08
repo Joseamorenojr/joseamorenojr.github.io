@@ -3,6 +3,8 @@ main:
     url: /
   - title: "About"
     url: /about/
+  - title: "Projects"
+    url: /projects/
   - title: "Artifacts"
     url: /artifacts/
   - title: "Code Review"
