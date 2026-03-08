@@ -1,6 +1,15 @@
 ---
 # main Sass file
 ---
+/* Profile image inside sidebar */
+.sidebar .author-avatar {
+  width: 100px;       /* fixed width */
+  height: 100px;      /* fixed height */
+  object-fit: cover;  /* crop if necessary */
+  border-radius: 50%; /* circular */
+  margin-bottom: 1rem;
+  display: block;
+}
 
 /* ---------------- Body & Background ---------------- */
 body {
