@@ -3,18 +3,18 @@ title: "Home"
 layout: default
 ---
 
-# Welcome
+<div class="page-content-wrapper">
+  {% include sidebar.html %}
 
-Welcome to my Computer Science ePortfolio. This site contains artifacts and enhancements completed during my Computer Science program.
+  <div class="main-content">
+  # Welcome
 
-The portfolio demonstrates skills in:
+  Welcome to my Computer Science ePortfolio. This site highlights my projects and learning artifacts throughout my program.
 
-- Software Design and Engineering
-- Algorithms and Data Structures
-- Database Systems
+  ## Featured Projects
 
-## Featured Projects
-
-- Pirate Intelligent Agent (Reinforcement Learning)  
-- Raspberry Pi Thermostat System  
-- AI Cartpole Model
+  - [Pirate Intelligent Agent](/projects/pirate_agent)
+  - [Raspberry Pi Thermostat System](/projects/thermostat_system)
+  - [AI Cartpole Model](/projects/cartpole_model)
+  </div>
+</div>
