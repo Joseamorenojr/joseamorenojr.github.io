@@ -6,12 +6,11 @@
   <title>Projects | Jose Moreno</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
-<div class="theme-toggle" onclick="toggleTheme()">
-  LIGHT / DARK
-</div>
-
 <body>
+  <div class="theme-toggle" onclick="toggleTheme()">
+    LIGHT / DARK
+  </div>
+
   <div class="page-frame">
     <header>
       <nav>
@@ -22,55 +21,58 @@
       </nav>
     </header>
 
-    <section class="projects-page">
-      <div class="projects-intro">
-        <h1>Projects</h1>
-        <p>Portfolio Artifacts</p>
+    <section class="projects-page-side-layout">
+      <div class="projects-top-row">
+        <div class="projects-title-block">
+          <h1>Projects</h1>
+          <p>Portfolio Artifacts</p>
+        </div>
+
+        <div class="projects-artifacts-column">
+          <div class="project-card">
+            <h3>Thermostat System</h3>
+            <p>
+              Embedded system using Raspberry Pi and sensors designed to monitor
+              and control environmental temperature.
+            </p>
+            <a href="projects/thermostat.html">View Artifact</a>
+          </div>
+
+          <div class="project-card">
+            <h3>Pirate Intelligent Agent</h3>
+            <p>
+              Reinforcement learning agent using Q-learning to optimize decision
+              making through training iterations.
+            </p>
+            <a href="projects/pirate-agent.html">View Artifact</a>
+          </div>
+
+          <div class="project-card">
+            <h3>Client Server Development</h3>
+            <p>
+              Database-driven system implementing MySQL integration and a web
+              dashboard for interaction visualization.
+            </p>
+            <a href="projects/client-server.html">View Artifact</a>
+          </div>
+        </div>
       </div>
 
-      <div class="projects-grid-bg"></div>
-
-      <div class="projects-grid">
-        <div class="project-card">
-          <h3>Thermostat System</h3>
-          <p>
-            Embedded system using Raspberry Pi and sensors designed to
-            monitor and control environmental temperature.
-          </p>
-          <a href="projects/thermostat.html">View Artifact</a>
-        </div>
-
-        <div class="project-card">
-          <h3>Pirate Intelligent Agent</h3>
-          <p>
-            Reinforcement learning agent using Q-learning to optimize
-            decision making through training iterations.
-          </p>
-          <a href="projects/pirate-agent.html">View Artifact</a>
-        </div>
-
-        <div class="project-card">
-          <h3>Client Server Development</h3>
-          <p>
-            Database-driven system implementing MySQL integration
-            and a web dashboard for interaction visualization.
-          </p>
-          <a href="projects/client-server.html">View Artifact</a>
-        </div>
-      </div>
-
-      <div class="code-review-section centered-review">
+      <div class="code-review-section centered-code-review">
         <h2>Project Code Review</h2>
         <p>
-          This video explains the architecture and implementation of my
-          software engineering project.
+          This video explains the architecture and implementation of my software
+          engineering project.
         </p>
 
         <div class="video-wrapper">
           <div class="video-container">
             <iframe
-              src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+              src="https://www.youtube.com/embed/tjqS5wdw0ks"
+              title="Project Code Review"
               frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
               allowfullscreen>
             </iframe>
           </div>
