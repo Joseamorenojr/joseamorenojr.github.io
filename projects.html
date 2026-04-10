@@ -1,112 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<title>Projects | Jose Moreno</title>
-
-<link rel="stylesheet" href="assets/css/style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects | Jose Moreno</title>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <div class="theme-toggle" onclick="toggleTheme()">
-LIGHT / DARK
+  LIGHT / DARK
 </div>
-  
+
 <body>
+  <div class="page-frame">
+    <header>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
 
-<div class="page-frame">
+    <section class="projects-page">
+      <div class="projects-intro">
+        <h1>Projects</h1>
+        <p>Portfolio Artifacts</p>
+      </div>
 
-<header>
-<nav>
-<a href="index.html">Home</a>
-<a href="projects.html" class="active">Projects</a>
-<a href="about.html">About</a>
-<a href="contact.html">Contact</a>
-</nav>
-</header>
+      <div class="projects-grid-bg"></div>
 
-<section class="hero">
-
-
-<div class="left">
-
-<h1>Projects</h1>
-<p>Portfolio Artifacts</p>
-
-</div>
-
-
-<div class="center"></div>
-
-
-<div class="right project-list">
-
-
-<div class="project-card">
-
-<h3>Thermostat System</h3>
-
-<p>
-Embedded system using Raspberry Pi and sensors designed to
-monitor and control environmental temperature.
-</p>
-
-<a href="projects/thermostat.html">View Artifact</a>
-
-</div>
-
-
-<div class="project-card">
-
-<h3>Pirate Intelligent Agent</h3>
-
-<p>
-Reinforcement learning agent using Q-learning to optimize
-decision making through training iterations.
-</p>
-
-<a href="projects/pirate-agent.html">View Artifact</a>
-
-</div>
-
-
-<div class="project-card">
-
-<h3>Client Server Development</h3>
-
-<p>
-Database-driven system implementing MySQL integration
-and a web dashboard for interaction visualization.
-</p>
-
-<a href="projects/client-server.html">View Artifact</a>
-
-</div>
-
-<div class="code-review-section">
-    <h2>Project Code Review</h2>
-    <p>This video explains the architecture and implementation of my software engineering project.</p>
-
-    <div class="video-wrapper">
-        <div class="video-container">
-            <iframe
-                src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-                frameborder="0"
-                allowfullscreen>
-            </iframe>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Thermostat System</h3>
+          <p>
+            Embedded system using Raspberry Pi and sensors designed to
+            monitor and control environmental temperature.
+          </p>
+          <a href="projects/thermostat.html">View Artifact</a>
         </div>
-    </div>
-  
-</div>
 
-</section>
+        <div class="project-card">
+          <h3>Pirate Intelligent Agent</h3>
+          <p>
+            Reinforcement learning agent using Q-learning to optimize
+            decision making through training iterations.
+          </p>
+          <a href="projects/pirate-agent.html">View Artifact</a>
+        </div>
 
+        <div class="project-card">
+          <h3>Client Server Development</h3>
+          <p>
+            Database-driven system implementing MySQL integration
+            and a web dashboard for interaction visualization.
+          </p>
+          <a href="projects/client-server.html">View Artifact</a>
+        </div>
+      </div>
 
-<script src="assets/js/page-transition.js"></script>
+      <div class="code-review-section centered-review">
+        <h2>Project Code Review</h2>
+        <p>
+          This video explains the architecture and implementation of my
+          software engineering project.
+        </p>
 
+        <div class="video-wrapper">
+          <div class="video-container">
+            <iframe
+              src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+              frameborder="0"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="assets/js/page-transition.js"></script>
+  </div>
 </body>
 </html>
