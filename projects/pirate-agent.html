@@ -6,20 +6,6 @@
   <title>Pirate Intelligent Agent | Jose Moreno</title>
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
-
-  <script>
-  function downloadFile(filePath) {
-    const link = document.createElement('a');
-    link.href = filePath;
-    link.setAttribute('download', '');
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  }
-</script>
-
-<script src="../assets/js/page-transition.js"></script>
-  
 <body>
   <div class="theme-toggle" onclick="toggleTheme()">
     LIGHT / DARK
@@ -126,5 +112,19 @@
 
     <script src="../assets/js/page-transition.js"></script>
   </div>
+  
+  <script>
+  function downloadFile(filePath) {
+    const link = document.createElement('a');
+    link.href = filePath;
+    link.setAttribute('download', '');
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+</script>
+
+<script src="../assets/js/page-transition.js"></script>
+  
 </body>
 </html>
