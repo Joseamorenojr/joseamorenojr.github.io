@@ -445,15 +445,15 @@ margin-right:auto;
   display: grid;
   grid-template-columns: minmax(260px, 1fr) minmax(420px, 420px);
   gap: 60px;
-  align-items: start;
+  align-items: center;
 }
 
 .projects-title-block {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: flex-start;
-  padding-top: 10px;
+  min-height: 100%;
 }
 
 .projects-title-block h1 {
