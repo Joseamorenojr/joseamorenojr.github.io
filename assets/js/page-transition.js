@@ -4,20 +4,42 @@ document.addEventListener("DOMContentLoaded", () => {
   const links = document.querySelectorAll("a[href]");
 
   links.forEach(link => {
-    const url = link.getAttribute("href");
+    const href = link.getAttribute("href");
 
-    if (url && !url.startsWith("#") && !url.startsWith("mailto")) {
-      link.addEventListener("click", e => {
-        e.preventDefault();
+    if (!href) return;
 
-        document.body.classList.remove("fade-in");
-        document.body.classList.add("fade-out");
+    const isAnchor = href.startsWith("#");
+    const isMailto = href.startsWith("mailto:");
+    const isTel = href.startsWith("tel:");
+    const isJavascript = href.startsWith("javascript:");
+    const isDownload = link.hasAttribute("download");
 
-        setTimeout(() => {
-          window.location = url;
-        }, 300);
-      });
+    const absoluteUrl = new URL(link.href, window.location.href);
+    const isExternal = absoluteUrl.origin !== window.location.origin;
+    const opensNewTab = link.getAttribute("target") === "_blank";
+
+    if (
+      isAnchor ||
+      isMailto ||
+      isTel ||
+      isJavascript ||
+      isDownload ||
+      isExternal ||
+      opensNewTab
+    ) {
+      return;
     }
+
+    link.addEventListener("click", e => {
+      e.preventDefault();
+
+      document.body.classList.remove("fade-in");
+      document.body.classList.add("fade-out");
+
+      setTimeout(() => {
+        window.location.href = absoluteUrl.href;
+      }, 300);
+    });
   });
 });
 
@@ -25,11 +47,22 @@ function toggleTheme() {
   document.body.classList.toggle("dark-mode");
 
   if (document.body.classList.contains("dark-mode")) {
-    localStorage.setItem("theme","dark");
+    localStorage.setItem("theme", "dark");
   } else {
-    localStorage.setItem("theme","light");
+    localStorage.setItem("theme", "light");
   }
 }
+
+window.addEventListener("load", () => {
+  if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark-mode");
+  }
+});
+
+window.addEventListener("pageshow", () => {
+  document.body.classList.remove("fade-out");
+  document.body.classList.add("fade-in");
+});
 
 window.onload = function() {
   if (localStorage.getItem("theme") === "dark") {
