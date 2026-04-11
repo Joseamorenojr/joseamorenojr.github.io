@@ -1,29 +1,106 @@
-<section class="hero">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pirate Intelligent Agent | Jose Moreno</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <div class="theme-toggle" onclick="toggleTheme()">
+    LIGHT / DARK
+  </div>
 
-<div class="left">
+  <div class="page-frame">
+    <header>
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="../projects.html" class="active">Projects</a>
+        <a href="../about.html">About</a>
+        <a href="../contact.html">Contact</a>
+        <a href="../self-assessment.html">Self-assessment</a>
+      </nav>
+    </header>
 
-<h1>Pirate Intelligent Agent</h1>
-<p>Algorithms Artifact</p>
+    <section class="artifact-detail-page">
+      <div class="artifact-hero">
+        <p class="artifact-label">Algorithms and Data Structures</p>
+        <h1>Pirate Intelligent Agent</h1>
+        <p class="artifact-summary">
+          A reinforcement learning system using Q-learning to solve a grid-based maze
+          environment through exploration, experience replay, and iterative optimization.
+        </p>
+      </div>
 
-</div>
+      <div class="artifact-links">
+        <a href="../files/Pirate-Original.zip" target="_blank">Original Artifact</a>
+        <a href="../files/Pirate-Enhanced.zip" target="_blank">Refined Artifact</a>
+        <a href="https://github.com/YOUR-USERNAME/YOUR-REPO" target="_blank">GitHub Repository</a>
+      </div>
 
-<div class="center"></div>
+      <div class="artifact-section">
+        <h2>Professional Review</h2>
+        <p>
+          This artifact highlights my ability to improve algorithmic performance through
+          better data structure usage, training design, and interpretability. The original
+          system implemented a Q-learning agent with epsilon-greedy exploration for solving
+          a maze environment.
+        </p>
+        <p>
+          In the enhanced version, I focused on learning efficiency and long-term
+          performance. I introduced elite experience replay to preserve successful
+          episodes, improved the replay system with structured sampling, refined the
+          epsilon decay schedule, and added performance tracking to better visualize
+          training progression and agent behavior.
+        </p>
+      </div>
 
-<div class="right">
+      <div class="artifact-section two-column">
+        <div>
+          <h2>Original Artifact</h2>
+          <p>
+            The original version demonstrated core reinforcement learning concepts,
+            including exploration, rewards, and Q-value updates, but it treated all
+            experiences equally and offered limited visibility into training behavior.
+          </p>
+        </div>
 
-<p>
+        <div>
+          <h2>Enhancements</h2>
+          <ul>
+            <li>Added elite experience replay for reusing high-performing episodes</li>
+            <li>Improved replay buffer design and memory management</li>
+            <li>Refined epsilon decay for smarter exploration and exploitation balance</li>
+            <li>Added reward tracking, win-rate history, and training visualization</li>
+            <li>Reorganized training flow for readability and efficiency</li>
+          </ul>
+        </div>
+      </div>
 
-A reinforcement learning system using Q-learning to train an
-intelligent agent.
+      <div class="artifact-section">
+        <h2>Skills Demonstrated</h2>
+        <div class="skill-tags">
+          <span>Python</span>
+          <span>Q-Learning</span>
+          <span>Algorithms</span>
+          <span>Data Structures</span>
+          <span>Experience Replay</span>
+          <span>Performance Analysis</span>
+          <span>Machine Learning</span>
+        </div>
+      </div>
 
-Enhancements include:
+      <div class="artifact-section">
+        <h2>Reflection</h2>
+        <p>
+          This project strengthened my understanding of how algorithm design decisions
+          affect both computational cost and learning outcomes. It also reinforced the
+          importance of observability when building intelligent systems.
+        </p>
+      </div>
+    </section>
 
-• epsilon-greedy decay  
-• matrix-based Q-table operations  
-• training visualization  
-
-</p>
-
-</div>
-
-</section>
+    <script src="../assets/js/page-transition.js"></script>
+  </div>
+</body>
+</html>
