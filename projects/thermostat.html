@@ -1,34 +1,107 @@
-<section class="hero">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thermostat System | Jose Moreno</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <div class="theme-toggle" onclick="toggleTheme()">
+    LIGHT / DARK
+  </div>
 
-<div class="left">
+  <div class="page-frame">
+    <header>
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="../projects.html" class="active">Projects</a>
+        <a href="../about.html">About</a>
+        <a href="../contact.html">Contact</a>
+        <a href="../self-assessment.html">Self-assessment</a>
+      </nav>
+    </header>
 
-<h1>Thermostat System</h1>
-<p>Software Engineering Artifact</p>
+    <section class="artifact-detail-page">
+      <div class="artifact-hero">
+        <p class="artifact-label">Software Design and Engineering</p>
+        <h1>Thermostat System</h1>
+        <p class="artifact-summary">
+          An embedded thermostat application designed for Raspberry Pi that monitors
+          environmental temperature, manages heating and cooling states, and interfaces
+          with hardware components including GPIO buttons, LEDs, a temperature sensor,
+          and an LCD display.
+        </p>
+      </div>
 
-</div>
+      <div class="artifact-links">
+        <a href="../files/Thermostat-Original.zip" target="_blank">Original Artifact</a>
+        <a href="../files/Thermostat-Enhanced.zip" target="_blank">Refined Artifact</a>
+        <a href="https://github.com/YOUR-USERNAME/YOUR-REPO" target="_blank">GitHub Repository</a>
+      </div>
 
-<div class="center"></div>
+      <div class="artifact-section">
+        <h2>Professional Review</h2>
+        <p>
+          This artifact demonstrates my growth in software design and engineering through
+          the refinement of an embedded system originally developed to run on Raspberry Pi.
+          The project uses a state-machine approach with operating modes for off, heat, and
+          cool, while continuously monitoring temperature and updating system output.
+        </p>
+        <p>
+          In the enhanced version, I improved the system’s reliability and maintainability
+          by introducing structured logging, stronger error handling around sensor and serial
+          communication, and clearer internal organization. These changes preserved the
+          original functionality while bringing the codebase closer to professional software
+          engineering standards.
+        </p>
+      </div>
 
-<div class="right">
+      <div class="artifact-section two-column">
+        <div>
+          <h2>Original Artifact</h2>
+          <p>
+            The original version successfully integrated multiple hardware components and
+            demonstrated a functioning thermostat system, but it relied heavily on basic
+            print-based debugging and lacked stronger resilience for real-world execution.
+          </p>
+        </div>
 
-<h2>Overview</h2>
+        <div>
+          <h2>Enhancements</h2>
+          <ul>
+            <li>Implemented structured logging for better monitoring and debugging</li>
+            <li>Added error handling around critical hardware interactions</li>
+            <li>Improved readability and maintainability through better code organization</li>
+            <li>Replaced scattered debug output with centralized logging practices</li>
+          </ul>
+        </div>
+      </div>
 
-<p>
+      <div class="artifact-section">
+        <h2>Skills Demonstrated</h2>
+        <div class="skill-tags">
+          <span>Python</span>
+          <span>Embedded Systems</span>
+          <span>State Machines</span>
+          <span>Debugging</span>
+          <span>Error Handling</span>
+          <span>Logging</span>
+          <span>Software Maintainability</span>
+        </div>
+      </div>
 
-This project implements a Raspberry Pi based thermostat system
-with environmental sensors.
+      <div class="artifact-section">
+        <h2>Reflection</h2>
+        <p>
+          This project taught me the difference between writing code that works and writing
+          code that remains stable, observable, and maintainable over time. It reflects my
+          ability to improve an existing system without disrupting its intended behavior.
+        </p>
+      </div>
+    </section>
 
-Enhancements include:
-
-• modular architecture  
-• logging system  
-• improved error handling  
-• state machine pattern  
-
-</p>
-
-<a href="https://github.com/Joseamorenojr">View Source Code</a>
-
-</div>
-
-</section>
+    <script src="../assets/js/page-transition.js"></script>
+  </div>
+</body>
+</html>
