@@ -400,3 +400,113 @@ margin-right:auto;
     font-size: 1.4rem;
   }
 }
+4. Add this CSS to the bottom of assets/css/style.css
+/* ----------------------------- */
+/* Artifact Detail Pages */
+/* ----------------------------- */
+
+.artifact-detail-page {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px 0 40px;
+}
+
+.artifact-hero {
+  margin-bottom: 30px;
+}
+
+.artifact-label {
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--secondary-text);
+  margin-bottom: 10px;
+}
+
+.artifact-hero h1 {
+  font-size: 4rem;
+  line-height: 1;
+  margin-bottom: 18px;
+}
+
+.artifact-summary {
+  max-width: 850px;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: var(--secondary-text);
+}
+
+.artifact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 36px;
+}
+
+.artifact-links a {
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid var(--border-color);
+  padding: 12px 18px;
+  background: var(--frame-bg);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.artifact-links a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0,0,0,.08);
+}
+
+.artifact-section {
+  border-top: 1px solid var(--border-color);
+  padding: 28px 0;
+}
+
+.artifact-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 14px;
+}
+
+.artifact-section p {
+  color: var(--secondary-text);
+  line-height: 1.8;
+  max-width: 950px;
+  margin-bottom: 14px;
+}
+
+.two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.two-column ul {
+  padding-left: 20px;
+  color: var(--secondary-text);
+  line-height: 1.8;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skill-tags span {
+  border: 1px solid var(--border-color);
+  padding: 8px 14px;
+  font-size: 0.95rem;
+  background: var(--frame-bg);
+}
+
+@media (max-width: 768px) {
+  .artifact-hero h1 {
+    font-size: 2.8rem;
+  }
+
+  .two-column {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
