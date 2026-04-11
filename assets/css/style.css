@@ -10,12 +10,13 @@
 --secondary-text:#444;
 }
 
-.dark-mode{
---bg-color:#0f0f0f;
---text-color:#f2f2f2;
---frame-bg:#1a1a1a;
---border-color:#444;
---secondary-text:#bbb;
+html.dark-mode,
+body.dark-mode{
+  --bg-color:#0f0f0f;
+  --text-color:#f2f2f2;
+  --frame-bg:#1a1a1a;
+  --border-color:#444;
+  --secondary-text:#bbb;
 }
 
 /* ----------------------------- */
