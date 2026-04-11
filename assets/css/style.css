@@ -177,10 +177,11 @@ gap:18px;
 
 .contact-links{
 display:flex;
-flex-direction:column;          /* stack vertically */
-align-items:center;             /* center inside right panel */
-gap:24px;                       /* 🔥 spacing between Email / GitHub / LinkedIn */
-margin-top:20px;
+flex-direction:row;        /* 🔥 keep horizontal */
+justify-content:center;    /* center them nicely */
+align-items:center;
+gap:40px;                  /* 🔥 MORE space between links */
+margin-top:24px;
 }
 
 .contact-links a{
@@ -193,7 +194,7 @@ transition:opacity .2s ease, transform .2s ease;
 
 .contact-links a:hover{
 opacity:0.7;
-transform:translateX(4px);      /* subtle modern movement */
+transform:translateY(-2px);   /* subtle lift instead of sideways shift */
 }
 
 /* ----------------------------- */
