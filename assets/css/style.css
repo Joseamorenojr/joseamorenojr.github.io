@@ -64,7 +64,6 @@ min-height:calc(100vh - 40px);
 transition:border .3s ease, background .3s ease;
 }
 
-/* Global dotted texture */
 .page-frame::before{
 content:"";
 position:absolute;
@@ -82,7 +81,6 @@ pointer-events:none;
 z-index:0;
 }
 
-/* Keep content above texture */
 .page-frame > *{
 position:relative;
 z-index:1;
@@ -171,6 +169,31 @@ text-align:center;
 font-size:15px;
 color:var(--secondary-text);
 gap:18px;
+}
+
+/* ----------------------------- */
+/* Contact Links (UPDATED) */
+/* ----------------------------- */
+
+.contact-links{
+display:flex;
+flex-direction:column;          /* stack vertically */
+align-items:center;             /* center inside right panel */
+gap:24px;                       /* 🔥 spacing between Email / GitHub / LinkedIn */
+margin-top:20px;
+}
+
+.contact-links a{
+font-size:16px;
+letter-spacing:0.5px;
+text-decoration:none;
+color:inherit;
+transition:opacity .2s ease, transform .2s ease;
+}
+
+.contact-links a:hover{
+opacity:0.7;
+transform:translateX(4px);      /* subtle modern movement */
 }
 
 /* ----------------------------- */
