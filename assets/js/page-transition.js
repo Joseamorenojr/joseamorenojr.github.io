@@ -44,14 +44,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function toggleTheme() {
   const root = document.documentElement;
-  const isDark = root.classList.contains("dark-mode");
+  root.classList.toggle("dark-mode");
 
-  if (isDark) {
-    root.classList.remove("dark-mode");
-    localStorage.setItem("theme", "light");
-  } else {
-    root.classList.add("dark-mode");
+  if (root.classList.contains("dark-mode")) {
     localStorage.setItem("theme", "dark");
+  } else {
+    localStorage.setItem("theme", "light");
   }
 }
 
