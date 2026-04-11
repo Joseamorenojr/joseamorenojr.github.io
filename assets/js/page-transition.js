@@ -59,9 +59,10 @@ window.addEventListener("load", () => {
   }
 });
 
-window.addEventListener("pageshow", () => {
-  document.body.classList.remove("fade-out");
-  document.body.classList.add("fade-in");
+window.addEventListener("load", () => {
+  if (localStorage.getItem("theme") === "dark") {
+    document.documentElement.classList.add("dark-mode");
+  }
 });
 
 window.onload = function() {
