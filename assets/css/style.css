@@ -10,14 +10,6 @@
 --secondary-text:#444;
 }
 
-:root{
---bg-color:#f5f5f5;
---text-color:#111;
---frame-bg:#ffffff;
---border-color:#ccc;
---secondary-text:#444;
-}
-
 html.dark-mode{
 --bg-color:#0f0f0f;
 --text-color:#f2f2f2;
@@ -53,7 +45,7 @@ body.fade-in{ opacity:1; }
 body.fade-out{ opacity:0; }
 
 /* ----------------------------- */
-/* Page Frame (UPDATED + TEXTURE SUPPORT) */
+/* Page Frame */
 /* ----------------------------- */
 
 .page-frame{
@@ -71,6 +63,8 @@ min-height:calc(100vh - 40px);
 
 transition:border .3s ease, background .3s ease;
 }
+
+/* 🔥 Global dotted texture */
 
 .page-frame::before{
 content:"";
@@ -92,6 +86,32 @@ z-index:0;
 .page-frame > *{
 position:relative;
 z-index:1;
+}
+
+/* ----------------------------- */
+/* 🔥 Vertical Theme Toggle */
+/* ----------------------------- */
+
+.theme-toggle{
+position:absolute;
+top:50%;
+left:-18px;
+transform:translateY(-50%) rotate(180deg);
+writing-mode:vertical-rl;
+
+font-size:12px;
+letter-spacing:2px;
+white-space:nowrap;
+
+cursor:pointer;
+color:var(--text-color);
+
+user-select:none;
+transition:opacity .2s ease;
+}
+
+.theme-toggle:hover{
+opacity:0.65;
 }
 
 /* ----------------------------- */
@@ -180,15 +200,15 @@ gap:18px;
 }
 
 /* ----------------------------- */
-/* Contact Links (UPDATED) */
+/* Contact Links */
 /* ----------------------------- */
 
 .contact-links{
 display:flex;
-flex-direction:row;        /* 🔥 keep horizontal */
-justify-content:center;    /* center them nicely */
+flex-direction:row;
+justify-content:center;
 align-items:center;
-gap:40px;                  /* 🔥 MORE space between links */
+gap:40px;
 margin-top:24px;
 }
 
@@ -202,7 +222,7 @@ transition:opacity .2s ease, transform .2s ease;
 
 .contact-links a:hover{
 opacity:0.7;
-transform:translateY(-2px);   /* subtle lift instead of sideways shift */
+transform:translateY(-2px);
 }
 
 /* ----------------------------- */
