@@ -10,13 +10,20 @@
 --secondary-text:#444;
 }
 
-html.dark-mode,
-body.dark-mode{
-  --bg-color:#0f0f0f;
-  --text-color:#f2f2f2;
-  --frame-bg:#1a1a1a;
-  --border-color:#444;
-  --secondary-text:#bbb;
+:root{
+--bg-color:#f5f5f5;
+--text-color:#111;
+--frame-bg:#ffffff;
+--border-color:#ccc;
+--secondary-text:#444;
+}
+
+html.dark-mode{
+--bg-color:#0f0f0f;
+--text-color:#f2f2f2;
+--frame-bg:#1a1a1a;
+--border-color:#444;
+--secondary-text:#bbb;
 }
 
 /* ----------------------------- */
