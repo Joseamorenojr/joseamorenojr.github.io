@@ -113,28 +113,28 @@
     <script src="../assets/js/page-transition.js"></script>
   </div>
   
-  <script>
-  function downloadFile(filePath) {
-    const link = document.createElement('a');
-    link.href = filePath;
-    link.setAttribute('download', '');
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  }
-</script>
+      <script>
+      function downloadFile(filePath) {
+        const link = document.createElement('a');
+        link.href = filePath;
+        link.setAttribute('download', '');
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      }
+    </script>
 
-<script src="../assets/js/page-transition.js"></script>
+    <script>
+      document.querySelectorAll('a[href^="http"]').forEach(link => {
+        link.setAttribute('target', '_blank');
+        link.setAttribute('rel', 'noopener noreferrer');
+      });
+    </script>
 
-<script>
-  document.querySelectorAll('a[href]').forEach(link => {
-    const isExternal = link.href.startsWith('http');
-    if (isExternal) {
-      link.setAttribute('target', '_blank');
-      link.setAttribute('rel', 'noopener noreferrer');
-    }
-  });
-</script>
+    <script src="../assets/js/page-transition.js"></script>
+  </div>
+</body>
+</html>
   
 </body>
 </html>
