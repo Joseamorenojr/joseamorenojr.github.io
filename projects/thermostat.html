@@ -113,5 +113,19 @@
 
     <script src="../assets/js/page-transition.js"></script>
   </div>
+  
+  <script>
+  function downloadFile(filePath) {
+    const link = document.createElement('a');
+    link.href = filePath;
+    link.setAttribute('download', '');
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+</script>
+
+<script src="../assets/js/page-transition.js"></script>
+  
 </body>
 </html>
