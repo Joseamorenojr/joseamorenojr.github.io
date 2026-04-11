@@ -549,3 +549,36 @@ margin-right:auto;
   margin: 30px 0;
   border: 1px solid var(--border-color);
 }
+/* ----------------------------- */
+/* Global Background Texture */
+/* ----------------------------- */
+
+.page-frame::before {
+  content: "";
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 60%;
+
+  background: radial-gradient(circle, var(--border-color) 1px, transparent 1px);
+  background-size: 8px 8px;
+
+  opacity: 0.25;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ensure content stays above texture */
+.page-frame {
+  position: relative;
+  overflow: hidden;
+
+  width:100%;
+  max-width:1400px;
+  border:1px solid var(--border-color);
+  padding:40px;
+  background:var(--frame-bg);
+  min-height:calc(100vh - 40px);
+}
