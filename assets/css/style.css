@@ -36,6 +36,7 @@ line-height:1.6;
 padding:18px;
 display:flex;
 justify-content:center;
+
 opacity:0;
 transition:opacity .3s ease, background .3s ease, color .3s ease;
 }
@@ -49,7 +50,7 @@ body.fade-out{ opacity:0; }
 
 .page-frame{
 position:relative;
-overflow:visible;
+overflow:hidden;
 
 width:100%;
 max-width:1680px;
@@ -71,6 +72,7 @@ bottom:0;
 left:50%;
 transform:translateX(-50%);
 width:42%;
+
 background:
   radial-gradient(ellipse at center,
     rgba(0,0,0,0.12) 0%,
@@ -134,15 +136,16 @@ left:-14px;
 bottom:20px;
 transform:rotate(180deg);
 writing-mode:vertical-rl;
+
 font-size:12px;
 letter-spacing:1px;
 line-height:1;
 white-space:nowrap;
+
 cursor:pointer;
 color:var(--text-color);
 user-select:none;
 transition:opacity .2s ease, color .3s ease;
-z-index:3;
 }
 
 .theme-toggle:hover{
@@ -217,18 +220,11 @@ font-size:22px;
 color:var(--secondary-text);
 }
 
-/* restored visible center texture */
 .center{
-width:40%;
+width:34%;
 height:520px;
-background:
-  radial-gradient(circle, rgba(0,0,0,0.28) 1px, transparent 1px);
-background-size:8px 8px;
-}
-
-html.dark-mode .center{
-background:
-  radial-gradient(circle, rgba(255,255,255,0.28) 1px, transparent 1px);
+background:none;
+opacity:1;
 }
 
 .right{
