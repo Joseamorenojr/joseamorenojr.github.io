@@ -125,6 +125,16 @@
 </script>
 
 <script src="../assets/js/page-transition.js"></script>
+
+<script>
+  document.querySelectorAll('a[href]').forEach(link => {
+    const isExternal = link.href.startsWith('http');
+    if (isExternal) {
+      link.setAttribute('target', '_blank');
+      link.setAttribute('rel', 'noopener noreferrer');
+    }
+  });
+</script>
   
 </body>
 </html>
