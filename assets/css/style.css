@@ -402,111 +402,150 @@ margin-right:auto;
 }
 4. Add this CSS to the bottom of assets/css/style.css
 /* ----------------------------- */
-/* Artifact Detail Pages */
+/* Artifact Detail Pages (FIXED) */
 /* ----------------------------- */
 
 .artifact-detail-page {
   width: 100%;
-  max-width: 1100px;
+  max-width: 900px;           /* keeps everything inside white frame */
   margin: 0 auto;
-  padding: 20px 0 40px;
+  padding: 40px 0 60px;
+  text-align: center;         /* centers EVERYTHING */
 }
 
+/* --- Header --- */
+
 .artifact-hero {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .artifact-label {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   letter-spacing: 1px;
   text-transform: uppercase;
   color: var(--secondary-text);
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .artifact-hero h1 {
-  font-size: 4rem;
-  line-height: 1;
-  margin-bottom: 18px;
+  font-size: 3.5rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
 }
 
 .artifact-summary {
-  max-width: 850px;
-  font-size: 1.15rem;
-  line-height: 1.8;
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  line-height: 2;             /* double-spaced feel */
   color: var(--secondary-text);
 }
 
+/* --- Links (BIG spacing fix) --- */
+
 .artifact-links {
   display: flex;
+  justify-content: center;
+  gap: 28px;                  /* 🔥 more space between buttons */
+  margin: 50px 0 60px;
   flex-wrap: wrap;
-  gap: 14px;
-  margin-bottom: 36px;
 }
 
 .artifact-links a {
   text-decoration: none;
   color: inherit;
   border: 1px solid var(--border-color);
-  padding: 12px 18px;
+  padding: 14px 22px;
   background: var(--frame-bg);
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+
   transition: transform .2s ease, box-shadow .2s ease;
 }
 
 .artifact-links a:hover {
-  transform: translateY(-2px);
+  transform: translateY(-3px);
   box-shadow: 0 6px 18px rgba(0,0,0,.08);
 }
 
+/* --- Sections --- */
+
 .artifact-section {
   border-top: 1px solid var(--border-color);
-  padding: 28px 0;
+  padding: 50px 0;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .artifact-section h2 {
   font-size: 1.8rem;
-  margin-bottom: 14px;
+  margin-bottom: 20px;
 }
 
+/* 🔥 TEXT FIXES (THIS IS THE BIG ONE) */
 .artifact-section p {
   color: var(--secondary-text);
-  line-height: 1.8;
-  max-width: 950px;
-  margin-bottom: 14px;
+  line-height: 2;             /* double spaced feel */
+  font-size: 1.1rem;
+  margin-bottom: 18px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+/* --- Two Column -> Centered Stack --- */
 
 .two-column {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
 }
 
-.two-column ul {
-  padding-left: 20px;
-  color: var(--secondary-text);
-  line-height: 1.8;
+.two-column div {
+  max-width: 650px;
 }
+
+/* --- Lists --- */
+
+.two-column ul {
+  text-align: left;
+  padding-left: 20px;
+  line-height: 2;
+  color: var(--secondary-text);
+}
+
+/* --- Skills --- */
 
 .skill-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
+  justify-content: center;
 }
 
 .skill-tags span {
   border: 1px solid var(--border-color);
   padding: 8px 14px;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   background: var(--frame-bg);
 }
 
+/* --- Responsive --- */
+
 @media (max-width: 768px) {
   .artifact-hero h1 {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
   }
 
-  .two-column {
-    grid-template-columns: 1fr;
-    gap: 24px;
+  .artifact-links {
+    gap: 18px;
   }
+}
+
+.artifact-section img {
+  max-width: 100%;
+  height: auto;
+  margin: 30px 0;
+  border: 1px solid var(--border-color);
 }
