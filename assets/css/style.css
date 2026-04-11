@@ -129,9 +129,9 @@ z-index:1;
 /* ----------------------------- */
 
 .theme-toggle{
-position:absolute;
-left:-14px;
-bottom:20px;
+position:fixed;
+left:18px;
+bottom:18px;
 transform:rotate(180deg);
 writing-mode:vertical-rl;
 font-size:12px;
@@ -142,7 +142,7 @@ cursor:pointer;
 color:var(--text-color);
 user-select:none;
 transition:opacity .2s ease, color .3s ease;
-z-index:3;
+z-index:9999;
 }
 
 .theme-toggle:hover{
