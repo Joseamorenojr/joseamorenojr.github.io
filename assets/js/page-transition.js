@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   links.forEach(link => {
     const href = link.getAttribute("href");
-
     if (!href) return;
 
     const isAnchor = href.startsWith("#");
@@ -44,29 +43,19 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function toggleTheme() {
-  document.documentElement.classList.toggle("dark-mode");
+  const root = document.documentElement;
+  const isDark = root.classList.contains("dark-mode");
 
-  if (document.documentElement.classList.contains("dark-mode")) {
-    localStorage.setItem("theme", "dark");
-  } else {
+  if (isDark) {
+    root.classList.remove("dark-mode");
     localStorage.setItem("theme", "light");
+  } else {
+    root.classList.add("dark-mode");
+    localStorage.setItem("theme", "dark");
   }
 }
 
-window.addEventListener("load", () => {
-  if (localStorage.getItem("theme") === "dark") {
-    document.body.classList.add("dark-mode");
-  }
+window.addEventListener("pageshow", () => {
+  document.body.classList.remove("fade-out");
+  document.body.classList.add("fade-in");
 });
-
-window.addEventListener("load", () => {
-  if (localStorage.getItem("theme") === "dark") {
-    document.documentElement.classList.add("dark-mode");
-  }
-});
-
-window.onload = function() {
-  if (localStorage.getItem("theme") === "dark") {
-    document.body.classList.add("dark-mode");
-  }
-}
