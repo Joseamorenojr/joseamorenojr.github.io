@@ -18,15 +18,15 @@
   <link rel="stylesheet" href="assets/css/style.css">
 
   <style>
+    /* KEEP YOUR ORIGINAL GRID */
     .about-page {
       display: grid;
       grid-template-columns: 260px 1fr;
       gap: 70px;
       align-items: start;
-      padding-top: 20px;
     }
 
-    /* LEFT TITLE COLUMN */
+    /* FIX TITLE ALIGNMENT (matches other pages) */
     .about-title {
       position: sticky;
       top: 40px;
@@ -39,29 +39,23 @@
       margin-bottom: 16px;
     }
 
-    .about-title p {
-      font-size: 15px;
-      color: var(--secondary-text);
-      max-width: 220px;
-    }
-
-    /* RIGHT CONTENT */
+    /* RIGHT SIDE CONTENT (NOT centered page-wide) */
     .about-content {
       max-width: 820px;
-      margin: 0 auto;
-      text-align: center; /* ✅ centers ALL description text */
+      text-align: center; /* centers image + text INSIDE column */
     }
 
-    /* PROFILE IMAGE */
+    /* PROFILE IMAGE FIX */
     .profile-img {
       width: 180px;
       height: 180px;
-      border-radius: 50%; /* ✅ perfect circle */
+      border-radius: 50%;
       object-fit: cover;
-      margin-bottom: 30px;
+      margin-bottom: 25px;
       border: 1px solid var(--border-color);
     }
 
+    /* TEXT CLEANUP */
     .about-content h2 {
       font-size: 26px;
       margin-bottom: 10px;
@@ -79,7 +73,7 @@
       line-height: 1.9;
       color: var(--secondary-text);
       margin-bottom: 20px;
-      max-width: 700px;
+      max-width: 650px;
       margin-left: auto;
       margin-right: auto;
     }
@@ -93,10 +87,6 @@
 
       .about-title {
         position: static;
-      }
-
-      .about-title p {
-        max-width: none;
       }
     }
   </style>
@@ -120,44 +110,38 @@
 
     <main class="about-page">
 
-      <!-- LEFT SIDE -->
+      <!-- LEFT SIDE TITLE -->
       <section class="about-title">
-        <h1>About<br>Me</h1>
-        <p>
-          A brief introduction to my background, interests, and path into
-          computer science and software development.
-        </p>
+        <h1>Jose<br>Moreno</h1>
       </section>
 
-      <!-- RIGHT SIDE -->
+      <!-- RIGHT SIDE CONTENT -->
       <section class="about-content">
 
-        <!-- IMAGE -->
         <img src="assets/images/profile.jpg" alt="Jose Moreno" class="profile-img">
 
-        <h2>Jose Moreno</h2>
-        <h3>Computer Science Student & Software Developer</h3>
+        <h2>Computer Science Student & Software Developer</h2>
 
         <p>
-          I am currently pursuing a Bachelor of Science in Computer Science,
-          where I have developed a strong foundation in software engineering,
-          data structures, algorithms, and full-stack development. Throughout
-          my academic journey, I have focused on building systems that are not
-          only functional, but also efficient, maintainable, and user-focused.
+          I am currently pursuing a Bachelor of Science in Computer Science, where I have
+          developed a strong foundation in software engineering, data structures,
+          algorithms, and full-stack development. Throughout my academic journey, I have
+          focused on building systems that are not only functional, but also efficient,
+          maintainable, and user-focused.
         </p>
 
         <p>
-          My experience includes working with Python, JavaScript, databases such
-          as MongoDB, and building applications that integrate both front-end and
+          My experience includes working with Python, JavaScript, and databases such as
+          MongoDB, along with building applications that integrate both front-end and
           back-end systems. I have also gained experience debugging complex issues,
           improving system performance, and applying secure development practices.
         </p>
 
         <p>
-          Beyond technical skills, I value continuous learning, problem solving,
-          and refining my work through iteration. My goal is to grow as a software
-          engineer and contribute to building systems that are reliable, scalable,
-          and meaningful to the people who use them.
+          Beyond technical skills, I value continuous learning, problem solving, and
+          refining my work through iteration. My goal is to grow as a software engineer
+          and contribute to building systems that are reliable, scalable, and meaningful
+          to the people who use them.
         </p>
 
       </section>
