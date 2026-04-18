@@ -13,141 +13,168 @@
       }
     })();
   </script>
-  <title>Self-Assessment | Jose Moreno</title>
+  <title>Self-assessment | Jose Moreno</title>
   <link rel="stylesheet" href="assets/css/style.css">
   <style>
-    .self-assessment-page {
+    .self-assessment-hero {
       display: grid;
-      grid-template-columns: 260px 1fr;
-      gap: 70px;
+      grid-template-columns: 1fr 1fr;
       align-items: start;
-      padding-top: 20px;
+      min-height: 62vh;
+      gap: 80px;
     }
 
-    .self-assessment-title {
-      position: sticky;
-      top: 40px;
+    .self-assessment-left {
+      padding-top: 200px;
     }
 
-    .self-assessment-title h1 {
-      font-size: 42px;
-      line-height: 1.05;
+    .self-assessment-left h1 {
+      font-size: 88px;
+      line-height: 0.95;
       font-weight: 600;
-      margin-bottom: 16px;
+      margin-bottom: 26px;
     }
 
-    .self-assessment-title p {
-      font-size: 15px;
+    .self-assessment-left p {
+      font-size: 22px;
       color: var(--secondary-text);
-      max-width: 220px;
     }
 
-    .self-assessment-content {
-      max-width: 860px;
+    .self-assessment-right {
+      padding-top: 110px;
+      max-width: 520px;
+      margin-left: auto;
     }
 
-    .assessment-intro {
-      border-top: 1px solid var(--border-color);
-      padding-top: 24px;
-      margin-bottom: 48px;
-    }
-
-    .assessment-intro p,
-    .assessment-section p,
-    .artifact-summary p {
-      font-size: 16px;
-      line-height: 1.95;
-      color: var(--secondary-text);
-      margin-bottom: 22px;
-    }
-
-    .assessment-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 22px;
-      margin: 40px 0 50px;
-    }
-
-    .assessment-card {
+    .self-intro-card {
       border: 1px solid var(--border-color);
-      padding: 24px;
-      background: var(--frame-bg);
-      transition: border .3s ease, background .3s ease, transform .2s ease;
+      padding: 42px 40px;
+      background: transparent;
     }
 
-    .assessment-card:hover {
-      transform: translateY(-4px);
+    .self-intro-card h2 {
+      font-size: 26px;
+      margin-bottom: 22px;
+      text-align: center;
     }
 
-    .assessment-card h2 {
-      font-size: 18px;
-      margin-bottom: 12px;
-    }
-
-    .assessment-card p {
-      font-size: 15px;
-      line-height: 1.85;
+    .self-intro-card p {
+      font-size: 16px;
+      line-height: 1.9;
       color: var(--secondary-text);
-      margin: 0;
+      text-align: center;
+      margin-bottom: 18px;
     }
 
-    .assessment-section,
-    .artifact-summary {
-      margin-bottom: 46px;
+    .self-assessment-body {
+      margin-top: 70px;
+      border-top: 1px solid var(--border-color);
+      padding-top: 70px;
     }
 
-    .assessment-section h2,
-    .artifact-summary h2 {
-      font-size: 24px;
+    .self-section {
+      margin-bottom: 72px;
+      max-width: 1100px;
+    }
+
+    .self-section h2 {
+      font-size: 28px;
       margin-bottom: 18px;
       font-weight: 600;
     }
 
-    .artifact-list {
+    .self-section p {
+      font-size: 16px;
+      line-height: 1.95;
+      color: var(--secondary-text);
+      margin-bottom: 20px;
+      max-width: 980px;
+    }
+
+    .skills-grid {
       display: grid;
-      gap: 18px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 26px;
+      margin-top: 30px;
+    }
+
+    .skill-card {
+      border: 1px solid var(--border-color);
+      padding: 28px;
+      background: transparent;
+    }
+
+    .skill-card h3 {
+      font-size: 21px;
+      margin-bottom: 14px;
+      font-weight: 600;
+    }
+
+    .skill-card p {
+      margin: 0;
+      max-width: none;
+    }
+
+    .artifact-summary-list {
+      display: grid;
+      gap: 20px;
       margin-top: 28px;
     }
 
-    .artifact-item {
+    .artifact-summary-item {
       border: 1px solid var(--border-color);
-      padding: 22px;
+      padding: 28px;
+      background: transparent;
     }
 
-    .artifact-item h3 {
-      font-size: 18px;
-      margin-bottom: 8px;
+    .artifact-summary-item h3 {
+      font-size: 21px;
+      margin-bottom: 12px;
+      font-weight: 600;
     }
 
-    .artifact-item p {
+    .artifact-summary-item p {
       margin: 0;
-      font-size: 15px;
-      line-height: 1.85;
-      color: var(--secondary-text);
+      max-width: none;
     }
 
-    @media (max-width: 980px) {
-      .self-assessment-page {
+    @media (max-width: 1100px) {
+      .self-assessment-hero {
         grid-template-columns: 1fr;
-        gap: 34px;
+        gap: 40px;
+        min-height: auto;
       }
 
-      .self-assessment-title {
-        position: static;
+      .self-assessment-left {
+        padding-top: 80px;
       }
 
-      .self-assessment-title p {
-        max-width: none;
+      .self-assessment-right {
+        padding-top: 0;
+        margin-left: 0;
+        max-width: 100%;
+      }
+
+      .self-assessment-left h1 {
+        font-size: 64px;
       }
     }
 
-    @media (max-width: 700px) {
-      .assessment-grid {
+    @media (max-width: 800px) {
+      .skills-grid {
         grid-template-columns: 1fr;
       }
 
-      .self-assessment-title h1 {
-        font-size: 34px;
+      .self-assessment-left h1 {
+        font-size: 52px;
+      }
+
+      .self-assessment-left p {
+        font-size: 18px;
+      }
+
+      .self-intro-card {
+        padding: 28px 24px;
       }
     }
   </style>
@@ -168,107 +195,195 @@
       </nav>
     </header>
 
-    <main class="self-assessment-page">
-      <section class="self-assessment-title">
-        <h1>Professional<br>Self-Assessment</h1>
-        <p>
-          A reflection on my growth throughout the Computer Science program,
-          the technical strengths I developed, and the way my portfolio pieces
-          connect into one professional story.
-        </p>
+    <main>
+      <section class="self-assessment-hero">
+        <div class="self-assessment-left">
+          <h1>Professional<br>Self-Assessment</h1>
+          <p>Portfolio Introduction</p>
+        </div>
+
+        <div class="self-assessment-right">
+          <div class="self-intro-card">
+            <h2>Overview</h2>
+            <p>
+              This self-assessment reflects the skills, values, and technical growth
+              I developed throughout the Computer Science program and through the
+              creation of this ePortfolio.
+            </p>
+            <p>
+              It introduces the artifacts that follow while demonstrating my
+              strengths in software engineering, algorithms, databases, security,
+              communication, and professional problem solving.
+            </p>
+          </div>
+        </div>
       </section>
 
-      <section class="self-assessment-content">
-        <div class="assessment-intro">
+      <section class="self-assessment-body">
+        <section class="self-section">
+          <h2>Program Growth and Professional Preparation</h2>
           <p>
-            Completing the Computer Science program at Southern New Hampshire University and building this ePortfolio has helped me better understand both my technical strengths and the kind of professional I want to become. Across the program, I developed skills in software engineering, databases, algorithms, security, and full-stack development, while also learning how to approach projects with more discipline, clearer communication, and stronger attention to usability. As I refined the work included in this portfolio, I was able to look beyond simply finishing assignments and instead focus on what each project revealed about my problem-solving process, adaptability, and readiness for a professional software environment.
+            Completing my coursework throughout the Computer Science program and
+            developing this ePortfolio has helped me better understand both my
+            technical strengths and my professional goals. Across the program, I
+            built experience in software engineering, data structures, algorithms,
+            databases, security, and full-stack development. More importantly, I
+            learned how to connect those technical skills to real problem solving,
+            clearer communication, and the kind of disciplined development process
+            expected in a professional environment.
           </p>
           <p>
-            The ePortfolio also helped shape my professional goals by showing me how much I value building systems that are not only functional, but organized, secure, and intuitive for the user. My academic work gave me experience with debugging, iterative design, documentation, and technical decision-making, while the portfolio process pushed me to present those skills in a way that is relevant to employers. Together, the program and the portfolio have prepared me to enter the computer science field with a stronger sense of purpose, a clearer technical identity, and a body of work that demonstrates both growth and capability.
-          </p>
-        </div>
-
-        <div class="assessment-grid">
-          <article class="assessment-card">
-            <h2>Collaboration in Team Environments</h2>
-            <p>
-              Throughout the program, I worked in discussion-based courses, peer reviews, and project workflows that required me to evaluate ideas, explain technical reasoning, and respond constructively to feedback. These experiences strengthened my ability to collaborate respectfully, stay aligned with shared goals, and contribute to solutions that support a larger team effort.
-            </p>
-          </article>
-
-          <article class="assessment-card">
-            <h2>Communicating With Stakeholders</h2>
-            <p>
-              Coursework in software design and project planning improved my ability to translate technical ideas into clear documentation for different audiences. Writing design documents, project explanations, and implementation summaries taught me how to communicate system behavior, requirements, and decisions in a way that supports clients, instructors, and non-technical stakeholders.
-            </p>
-          </article>
-
-          <article class="assessment-card">
-            <h2>Data Structures and Algorithms</h2>
-            <p>
-              My coursework strengthened my understanding of how algorithms and data organization affect efficiency, scalability, and decision-making in software. Working through logic-based problems and intelligent systems projects helped me become more intentional about performance, structure, and choosing the right approach for a given problem.
-            </p>
-          </article>
-
-          <article class="assessment-card">
-            <h2>Software Engineering, Databases, and Security</h2>
-            <p>
-              Across application development projects, I built experience with front-end structure, back-end logic, data persistence, and security-aware design. I worked with database integration, authentication concepts, secure development practices, and debugging workflows that reinforced the importance of building software that is maintainable, reliable, and safe for users.
-            </p>
-          </article>
-        </div>
-
-        <section class="assessment-section">
-          <h2>Program Experience and Professional Growth</h2>
-          <p>
-            My coursework helped me grow from completing programming tasks to understanding how complete software systems are planned, developed, tested, and improved. In software engineering courses, I learned to think in terms of structure, requirements, and maintainability rather than only focusing on writing code that works in the moment. In database work, I gained experience connecting applications to persistent storage and understanding how data models influence system design. In security-focused assignments, I became more aware of the importance of authentication, secure coding, and protecting both systems and users.
+            The portfolio process helped me move beyond simply completing coursework.
+            Revisiting artifacts, refining them, and presenting them in a professional
+            format allowed me to see how much my approach to development has matured.
+            I became more focused on maintainability, readability, user value, and
+            system reliability. This process also shaped my professional values by
+            reinforcing the importance of thoughtful design, continuous improvement,
+            and building applications that are both functional and polished.
           </p>
           <p>
-            Outside of the artifacts included in this portfolio, I also strengthened my skills through repeated troubleshooting and refinement across multiple projects. Debugging dashboard environments, resolving package and configuration issues, improving application flow, and revisiting earlier work to make it more polished all contributed to my growth. Those experiences helped me become more patient, more resourceful, and more confident in my ability to break down technical problems and improve existing systems instead of starting over whenever something became difficult.
+            In addition to the featured artifacts, my growth was also shaped by work
+            outside the portfolio itself. Troubleshooting environment issues, refining
+            project structure, resolving package and configuration problems, and
+            improving interface design all contributed to my development. Those
+            experiences strengthened my patience, adaptability, and ability to break
+            complex technical problems into manageable steps, which are all important
+            qualities in the computer science field.
           </p>
         </section>
 
-        <section class="assessment-section">
-          <h2>Professional Goals and Values</h2>
-          <p>
-            This program clarified that my long-term goal is to continue growing as a software engineer who can build practical, efficient, and user-centered applications. I value clean organization, thoughtful design, and systems that solve real problems without unnecessary complexity. I also value continuous improvement. Many of my strongest learning moments came from revising projects, applying feedback, and identifying how a working solution could become a stronger professional example.
-          </p>
-          <p>
-            As I move forward, I want to continue developing my skills in application development, system design, and secure software practices while remaining adaptable to new tools and technologies. The work in this portfolio reflects the foundation I have built, but it also reflects the mindset I want to carry into my career: curiosity, persistence, and a commitment to building software that is both technically sound and valuable to the people who use it.
-          </p>
-        </section>
-
-        <section class="artifact-summary">
-          <h2>How the Artifacts Fit Together</h2>
-          <p>
-            The artifacts in this portfolio were selected to show a broad view of my abilities across the computer science discipline rather than focusing on only one area. Each piece demonstrates a different part of my development and together they present a more complete picture of my skills. Instead of standing alone, the artifacts build on one another to show how I approach software from multiple perspectives, including design, implementation, data management, problem solving, and refinement.
-          </p>
-
-          <div class="artifact-list">
-            <article class="artifact-item">
-              <h3>Software Design and Engineering</h3>
+        <section class="self-section">
+          <h2>Core Skills and Professional Strengths</h2>
+          <div class="skills-grid">
+            <article class="skill-card">
+              <h3>Collaborating in a Team Environment</h3>
               <p>
-                My software engineering artifact demonstrates my ability to plan, structure, and refine an application with attention to user interaction, architecture, and maintainability. It reflects my growth in organizing systems more intentionally and presenting technical work in a polished, professional format.
+                Throughout the program, I participated in discussions, peer reviews,
+                and collaborative assignments that required me to communicate ideas,
+                evaluate solutions, and respond to feedback constructively. These
+                experiences improved my ability to contribute to shared goals and work
+                productively in team-based environments.
               </p>
             </article>
 
-            <article class="artifact-item">
-              <h3>Algorithms and Data Structures</h3>
+            <article class="skill-card">
+              <h3>Communicating With Stakeholders</h3>
               <p>
-                My algorithms-related work highlights my understanding of logic, efficiency, and computational problem solving. This artifact contributes to the portfolio by showing how I apply analytical thinking and structured reasoning when developing intelligent or performance-focused solutions.
+                My coursework strengthened my ability to explain technical concepts to
+                different audiences. Through software design documents, project
+                summaries, and implementation explanations, I learned how to translate
+                technical decisions into clear communication that supports instructors,
+                stakeholders, and non-technical audiences.
               </p>
             </article>
 
-            <article class="artifact-item">
-              <h3>Databases</h3>
+            <article class="skill-card">
+              <h3>Data Structures and Algorithms</h3>
               <p>
-                My database artifact illustrates how I work with data-driven systems, including storage, retrieval, and integration between applications and backend services. It helps connect the portfolio as a whole by showing that I can build solutions that are not only functional on the surface, but also supported by meaningful data structures and backend logic.
+                I developed a stronger understanding of how data organization and
+                algorithm design affect efficiency, scalability, and decision making
+                in software systems. This knowledge helped me approach problems more
+                analytically and choose structures and logic that better support
+                performance and maintainability.
+              </p>
+            </article>
+
+            <article class="skill-card">
+              <h3>Software Engineering and Databases</h3>
+              <p>
+                Through application design and database-driven projects, I gained
+                experience building systems that connect front-end interaction with
+                backend logic and persistent storage. I worked with full-stack
+                structure, CRUD functionality, maintainable code organization, and
+                data integration that reflects practical software development.
+              </p>
+            </article>
+
+            <article class="skill-card">
+              <h3>Security</h3>
+              <p>
+                Security became an important part of how I think about systems. I
+                explored secure coding practices, authentication, validation, and the
+                importance of protecting data integrity and user information. These
+                experiences helped me recognize that security must be considered at
+                every layer of development rather than treated as an afterthought.
+              </p>
+            </article>
+
+            <article class="skill-card">
+              <h3>Professional Goals and Values</h3>
+              <p>
+                This program clarified my goal of continuing to grow as a software
+                engineer who builds efficient, secure, and user-centered systems. I
+                value clear organization, thoughtful design, continuous learning, and
+                iterative improvement. Those values are reflected throughout the work
+                included in this portfolio.
               </p>
             </article>
           </div>
+        </section>
 
-          <p style="margin-top: 28px;">
-            Together, these artifacts demonstrate the full range of my computer science experience and support the overall purpose of this portfolio: to present me as an emerging professional who can think critically, develop effectively, and continue growing in the field. They show not only what I created during the program, but how I have matured in the way I design, evaluate, and communicate technical work.
+        <section class="self-section">
+          <h2>How the Artifacts Fit Together</h2>
+          <p>
+            The artifacts in this portfolio were selected to present a broad and
+            connected view of my computer science abilities. Each artifact highlights
+            a different area of strength, but together they show how I approach
+            software from multiple perspectives including design, implementation,
+            problem solving, data management, security, and refinement.
+          </p>
+
+          <div class="artifact-summary-list">
+            <article class="artifact-summary-item">
+              <h3>Software Design and Engineering</h3>
+              <p>
+                My thermostat system artifact demonstrates how I improved an embedded
+                application by strengthening maintainability, error handling, logging,
+                and code organization. It shows my ability to refine an existing
+                system using professional engineering practices without changing its
+                intended functionality.
+              </p>
+            </article>
+
+            <article class="artifact-summary-item">
+              <h3>Algorithms and Data Structures</h3>
+              <p>
+                My pirate intelligent agent artifact highlights my work in algorithmic
+                optimization, reinforcement learning improvement, and structured
+                experience replay. It reflects my ability to think analytically about
+                efficiency, learning performance, and data organization.
+              </p>
+            </article>
+
+            <article class="artifact-summary-item">
+              <h3>Databases</h3>
+              <p>
+                My Grazioso Salvare dashboard artifact demonstrates my ability to work
+                with database-driven systems, secure application design, CRUD
+                operations, and front-end/backend integration. It connects the
+                portfolio by showing that I can build applications that are supported
+                by meaningful backend logic and user-focused data presentation.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="self-section">
+          <h2>Portfolio Summary</h2>
+          <p>
+            Together, these artifacts demonstrate the full range of my growth in the
+            Computer Science program and show my readiness to continue developing in a
+            professional setting. This portfolio represents more than completed
+            assignments. It reflects how I design, revise, troubleshoot, and present
+            technical work with greater intention and professionalism.
+          </p>
+          <p>
+            As I move forward in my career, I want to continue strengthening my skills
+            in software engineering, full-stack development, and secure application
+            design. I am committed to continuous learning and to building systems that
+            are reliable, scalable, and valuable to the people who use them. This
+            self-assessment serves as the introduction to that work and to the
+            technical artifacts that follow throughout the portfolio.
           </p>
         </section>
       </section>
