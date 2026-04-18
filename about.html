@@ -1,93 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+    (function () {
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme === "dark") {
+        document.documentElement.classList.add("dark-mode");
+      } else {
+        document.documentElement.classList.remove("dark-mode");
+      }
+    })();
+  </script>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script>
-  (function () {
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme === "dark") {
-      document.documentElement.classList.add("dark-mode");
-    } else {
-      document.documentElement.classList.remove("dark-mode");
+  <title>About | Jose Moreno</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <style>
+    .about-page {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 70px;
+      align-items: start;
+      padding-top: 20px;
     }
-  })();
-</script>
-<title>About | Jose Moreno</title>
 
-<link rel="stylesheet" href="assets/css/style.css">
+    /* LEFT TITLE COLUMN */
+    .about-title {
+      position: sticky;
+      top: 40px;
+    }
 
+    .about-title h1 {
+      font-size: 42px;
+      line-height: 1.05;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+
+    .about-title p {
+      font-size: 15px;
+      color: var(--secondary-text);
+      max-width: 220px;
+    }
+
+    /* RIGHT CONTENT */
+    .about-content {
+      max-width: 820px;
+      margin: 0 auto;
+      text-align: center; /* ✅ centers ALL description text */
+    }
+
+    /* PROFILE IMAGE */
+    .profile-img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%; /* ✅ perfect circle */
+      object-fit: cover;
+      margin-bottom: 30px;
+      border: 1px solid var(--border-color);
+    }
+
+    .about-content h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+
+    .about-content h3 {
+      font-size: 16px;
+      font-weight: 400;
+      color: var(--secondary-text);
+      margin-bottom: 30px;
+    }
+
+    .about-content p {
+      font-size: 16px;
+      line-height: 1.9;
+      color: var(--secondary-text);
+      margin-bottom: 20px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* MOBILE */
+    @media (max-width: 980px) {
+      .about-page {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .about-title {
+        position: static;
+      }
+
+      .about-title p {
+        max-width: none;
+      }
+    }
+  </style>
 </head>
 
-</div>
-  
 <body>
-
-<div class="page-frame">
   <div class="theme-toggle" onclick="toggleTheme()">
     LIGHT / DARK
   </div>
-<header>
-<nav>
-<a href="index.html">Home</a>
-<a href="self-assessment.html">Self-assessment</a>
-<a href="projects.html">Projects</a>
-<a href="about.html" class="active">About</a>
-<a href="contact.html">Contact</a>
-</nav>
-  
-</header>
 
-<section class="hero">
+  <div class="page-frame">
+    <header>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html" class="active">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="self-assessment.html">Self-assessment</a>
+      </nav>
+    </header>
 
-<div class="left">
+    <main class="about-page">
 
-<h1>Jose Moreno</h1>
-<p>Software Engineer</p>
+      <!-- LEFT SIDE -->
+      <section class="about-title">
+        <h1>About<br>Me</h1>
+        <p>
+          A brief introduction to my background, interests, and path into
+          computer science and software development.
+        </p>
+      </section>
 
-</div>
+      <!-- RIGHT SIDE -->
+      <section class="about-content">
 
+        <!-- IMAGE -->
+        <img src="assets/images/profile.jpg" alt="Jose Moreno" class="profile-img">
 
-<div class="center"></div>
+        <h2>Jose Moreno</h2>
+        <h3>Computer Science Student & Software Developer</h3>
 
+        <p>
+          I am currently pursuing a Bachelor of Science in Computer Science,
+          where I have developed a strong foundation in software engineering,
+          data structures, algorithms, and full-stack development. Throughout
+          my academic journey, I have focused on building systems that are not
+          only functional, but also efficient, maintainable, and user-focused.
+        </p>
 
-<div class="right">
+        <p>
+          My experience includes working with Python, JavaScript, databases such
+          as MongoDB, and building applications that integrate both front-end and
+          back-end systems. I have also gained experience debugging complex issues,
+          improving system performance, and applying secure development practices.
+        </p>
 
-<h2>About Me</h2>
+        <p>
+          Beyond technical skills, I value continuous learning, problem solving,
+          and refining my work through iteration. My goal is to grow as a software
+          engineer and contribute to building systems that are reliable, scalable,
+          and meaningful to the people who use them.
+        </p>
 
-<img src="assets/images/profile.jpg" class="profile">
+      </section>
 
-<p class="about-text">
+    </main>
+  </div>
 
-I am a software engineer based in Texas with a focus on software architecture,
-machine learning, and system integration.
+  <script>
+    function toggleTheme() {
+      document.documentElement.classList.toggle("dark-mode");
+      const isDark = document.documentElement.classList.contains("dark-mode");
+      localStorage.setItem("theme", isDark ? "dark" : "light");
+    }
 
-My academic work has focused on building scalable systems, optimizing algorithms,
-and integrating computing technologies into cohesive solutions.
+    document.addEventListener("DOMContentLoaded", function () {
+      document.body.classList.add("fade-in");
+    });
 
-</p>
+    document.querySelectorAll("a[href]").forEach(link => {
+      const href = link.getAttribute("href");
+      if (!href || href.startsWith("http") || href.startsWith("#")) return;
 
-<p class="portfolio-intro">My portfolio demonstrates practical work in:</p>
-
-<ul class="about-list">
-<li>Software System Design</li>
-<li>Reinforcement Learning Algorithms</li>
-<li>Database-Driven Applications</li>
-</ul>
-
-</div>
-  
-</section>
-
-
-<script src="assets/js/page-transition.js"></script>
-
-</body>
-</html>
-
-</section>
+      link.addEventListener("click", function (e) {
+        e.preventDefault();
+        document.body.classList.remove("fade-in");
+        document.body.classList.add("fade-out");
+        setTimeout(() => {
+          window.location.href = href;
+        }, 300);
+      });
+    });
+  </script>
 
 </body>
 </html>
